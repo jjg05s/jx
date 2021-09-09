@@ -185,13 +185,13 @@ var _ = Describe("Meta pipeline", func() {
 				Expect(steps[1].Name).Should(Equal("git-merge"))
 				Expect(steps[2].Name).Should(Equal(mergePullRefsStepName))
 				Expect(steps[3].Name).Should(Equal(createEffectivePipelineStepName))
-				Expect(steps[3].Image).Should(Equal("gcr.io/jenkinsxio/builder-maven:0.1.527"))
+				Expect(steps[3].Image).Should(Equal("ghcr.io/jenkins-x/builder-maven:0.1.527"))
 				Expect(steps[4].Name).Should(Equal("acme-ext"))
 				Expect(steps[5].Name).Should(Equal(createTektonCRDsStepName))
 			})
 			It("uses version stream for default image", func() {
 				steps := actualCRDs.Tasks()[0].Spec.Steps
-				Expect(steps[3].Image).Should(Equal("gcr.io/jenkinsxio/builder-maven:0.1.527"))
+				Expect(steps[3].Image).Should(Equal("ghcr.io/jenkins-x/builder-maven:0.1.527"))
 			})
 		})
 

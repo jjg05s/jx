@@ -166,4 +166,4 @@ autoUpdate:
   enabled: {{ .Requirements.autoUpdate.enabled }}
   {{- end }}
 
-builderImage: gcr.io/jenkinsxio/builder-go:0.1.760
+builderImage: ghcr.io/jenkins-x/builder-go:0.1.760

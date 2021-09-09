@@ -98,7 +98,7 @@ function setup_git() {
 ###############################################################################
 function setup_helm() {
   helm init --client-only
-  helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  helm repo add jenkins-x https://jenkins-x-charts.github.io/v2
 }
 
 ###############################################################################

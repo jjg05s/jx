@@ -56,7 +56,7 @@ items:
             completionTime: "2019-07-02T12:36:47Z"
             conditions:
               - lastTransitionTime: "2019-07-02T12:36:47Z"
-                message: '"build-step-promote-jx-promote" exited with code 1 (image: "docker-pullable://gcr.io/jenkinsxio/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82");
+                message: '"build-step-promote-jx-promote" exited with code 1 (image: "docker-pullable://ghcr.io/jenkins-x/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82");
               for logs run: kubectl -n jx logs fakeowner-fakerepo-fakebranch-1-from-fakebranch-rbw8t-pod-1682b0
               -c build-step-promote-jx-promote'
                 status: "False"

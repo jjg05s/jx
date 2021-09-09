@@ -72,7 +72,7 @@ items:
         value: $(inputs.params.version)
       - name: PREVIEW_VERSION
         value: $(inputs.params.version)
-      image: gcr.io/jenkinsxio/builder-jx:0.1.527
+      image: ghcr.io/jenkins-x/builder-jx:0.1.527
       name: setup-builder-home
       resources:
         requests:
@@ -140,7 +140,7 @@ items:
         value: $(inputs.params.version)
       - name: PREVIEW_VERSION
         value: $(inputs.params.version)
-      image: gcr.io/jenkinsxio/builder-jx:0.1.527
+      image: ghcr.io/jenkins-x/builder-jx:0.1.527
       name: git-merge
       resources:
         requests:
@@ -272,7 +272,7 @@ items:
         value: $(inputs.params.version)
       - name: PREVIEW_VERSION
         value: $(inputs.params.version)
-      image: gcr.io/jenkinsxio/builder-go:0.0.0-SNAPSHOT-PR-380-56
+      image: ghcr.io/jenkins-x/builder-go:0.0.0-SNAPSHOT-PR-380-56
       name: build-build
       resources:
         requests:
@@ -470,7 +470,7 @@ items:
         value: $(inputs.params.version)
       - name: PREVIEW_VERSION
         value: $(inputs.params.version)
-      image: gcr.io/jenkinsxio/builder-go:0.0.0-SNAPSHOT-PR-380-56
+      image: ghcr.io/jenkins-x/builder-go:0.0.0-SNAPSHOT-PR-380-56
       name: build-helm-version
       resources:
         requests:
@@ -536,7 +536,7 @@ items:
         value: $(inputs.params.version)
       - name: PREVIEW_VERSION
         value: $(inputs.params.version)
-      image: gcr.io/jenkinsxio/builder-go:0.0.0-SNAPSHOT-PR-380-56
+      image: ghcr.io/jenkins-x/builder-go:0.0.0-SNAPSHOT-PR-380-56
       name: promote-release
       resources:
         requests:

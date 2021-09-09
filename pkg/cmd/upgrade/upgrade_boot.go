@@ -51,7 +51,7 @@ var (
 )
 
 const (
-	builderImage         = "gcr.io/jenkinsxio/builder-go"
+	builderImage         = "ghcr.io/jenkins-x/builder-go"
 	keepDevEnvKey        = "keepDevEnv"
 	keepDevEnvDriverName = "Always keep the dev env version during merges and cherry-picks"
 )

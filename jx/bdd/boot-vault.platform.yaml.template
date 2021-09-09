@@ -5,15 +5,15 @@ jenkins:
       Maven:
         Containers:
           Maven:
-            Image: gcr.io/jenkinsxio/builder-maven:$VERSION
+            Image: ghcr.io/jenkins-x/builder-maven:$VERSION
       Nodejs:
         Containers:
           Nodejs:
-            Image: gcr.io/jenkinsxio/builder-nodejs:$VERSION
+            Image: ghcr.io/jenkins-x/builder-nodejs:$VERSION
       Go:
         Containers:
           Go:
-            Image: gcr.io/jenkinsxio/builder-go:$VERSION
+            Image: ghcr.io/jenkins-x/builder-go:$VERSION
 
 {{- if eq .Requirements.webhook "lighthouse" }}
 controllerbuild:
@@ -26,7 +26,7 @@ controllerbuild:
   - "--git-credentials"
   - "--verbose"
   image:
-    repository: gcr.io/jenkinsxio/builder-go
+    repository: ghcr.io/jenkins-x/builder-go
     tag: $VERSION
 {{- else }}
 controllerbuild:
@@ -37,41 +37,41 @@ controllerbuild:
   - "--batch-mode"
   - "--verbose"
   image:
-    repository: gcr.io/jenkinsxio/builder-go
+    repository: ghcr.io/jenkins-x/builder-go
     tag: $VERSION
 {{- end }}
 
 gcpreviews:
   image:
-    repository: gcr.io/jenkinsxio/builder-jx
+    repository: ghcr.io/jenkins-x/builder-jx
     tag: $VERSION
 
 gcactivities:
   image:
-    repository: gcr.io/jenkinsxio/builder-jx
+    repository: ghcr.io/jenkins-x/builder-jx
     tag: $VERSION
 
 gcpods:
   image:
-    repository: gcr.io/jenkinsxio/builder-jx
+    repository: ghcr.io/jenkins-x/builder-jx
     tag: $VERSION
 
 controllerworkflow:
   image:
-    repository: gcr.io/jenkinsxio/builder-jx
+    repository: ghcr.io/jenkins-x/builder-jx
     tag: $VERSION
 
 controllercommitstatus:
   image:
-    repository: gcr.io/jenkinsxio/builder-jx
+    repository: ghcr.io/jenkins-x/builder-jx
     tag: $VERSION
 
 controllerrole:
   image:
-    repository: gcr.io/jenkinsxio/builder-jx
+    repository: ghcr.io/jenkins-x/builder-jx
     tag: $VERSION
 
 controllerteam:
   image:
-    repository: gcr.io/jenkinsxio/builder-jx
+    repository: ghcr.io/jenkins-x/builder-jx
     tag: $VERSION

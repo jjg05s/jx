@@ -29,7 +29,7 @@ echo "https://$GH_USERNAME:$GH_ACCESS_TOKEN@github.com" > $JX_HOME/git/credentia
 
 gcloud auth activate-service-account --key-file $GKE_SA
 
-# lets setup git 
+# lets setup git
 git config --global --add user.name jenkins-x-bot-test
 git config --global --add user.email jenkins-x@googlegroups.com
 
@@ -68,7 +68,7 @@ rm tmp.yaml
 
 # TODO hack until we fix boot to do this too!
 helm init --client-only
-helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+helm repo add jenkins-x https://jenkins-x-charts.github.io/v2
 
 # We need to use the image from the Pull Request instead of the versions stream, otherwise we are not testing the PR itself
 sed -i "s/builder-go.*/&:$VERSION/g" jenkins-x.yml

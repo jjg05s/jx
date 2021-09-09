@@ -12,7 +12,7 @@ type ImageTagInfo struct {
 }
 
 // FindLatestImageTag returns the latest image tag from the JSON output of the command
-// ` gcloud container images list-tags gcr.io/jenkinsxio/builder-maven --format jsonhig`
+// ` gcloud container images list-tags ghcr.io/jenkins-x/builder-maven --format jsonhig`
 func FindLatestImageTag(output string) (string, error) {
 	infos := []ImageTagInfo{}
 

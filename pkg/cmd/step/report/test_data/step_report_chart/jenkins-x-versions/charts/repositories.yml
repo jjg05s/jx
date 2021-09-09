@@ -7,7 +7,7 @@ repositories:
       - https://flagger.app
   - prefix: jenkins-x
     urls:
-      - https://storage.googleapis.com/chartmuseum.jenkins-x.io
+      - https://jenkins-x-charts.github.io/v2
       - http://chartmuseum.jenkins-x.io
   - prefix: stable
     urls:

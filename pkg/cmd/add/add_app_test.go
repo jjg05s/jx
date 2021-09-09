@@ -68,7 +68,7 @@ func TestAddAppForGitOps(t *testing.T) {
 		name := nameUUID.String()
 		version := "0.0.1"
 		alias := fmt.Sprintf("%s-alias", name)
-		repo := "https://storage.googleapis.com/chartmuseum.jenkins-x.io"
+		repo := "https://jenkins-x-charts.github.io/v2"
 		description := "My test chart description"
 		commonOpts := *testOptions.CommonOptions
 		o := &add.AddAppOptions{
@@ -242,7 +242,7 @@ func TestAddAppWithSecrets(t *testing.T) {
 				CommonOptions: &commonOpts,
 			},
 			Version:    version,
-			Repo:       "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+			Repo:       "https://jenkins-x-charts.github.io/v2",
 			GitOps:     true,
 			DevEnv:     testOptions.DevEnv,
 			HelmUpdate: true, // Flag default when run on CLI
@@ -392,7 +392,7 @@ func TestAddAppWithDefaults(t *testing.T) {
 				CommonOptions: &commonOpts,
 			},
 			Version:    version,
-			Repo:       "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+			Repo:       "https://jenkins-x-charts.github.io/v2",
 			GitOps:     true,
 			DevEnv:     testOptions.DevEnv,
 			HelmUpdate: true, // Flag default when run on CLI
@@ -526,7 +526,7 @@ func TestStashValues(t *testing.T) {
 				CommonOptions: &commonOpts,
 			},
 			Version:    version,
-			Repo:       "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+			Repo:       "https://jenkins-x-charts.github.io/v2",
 			GitOps:     true,
 			DevEnv:     testOptions.DevEnv,
 			HelmUpdate: true, // Flag default when run on CLI
@@ -607,7 +607,7 @@ func TestAddAppForGitOpsWithSecrets(t *testing.T) {
 			},
 			Version:    version,
 			Alias:      alias,
-			Repo:       "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+			Repo:       "https://jenkins-x-charts.github.io/v2",
 			GitOps:     true,
 			DevEnv:     testOptions.DevEnv,
 			HelmUpdate: true, // Flag default when run on CLI
@@ -962,7 +962,7 @@ func TestAddAppWithValuesFileForGitOps(t *testing.T) {
 		},
 		Version:     version,
 		Alias:       alias,
-		Repo:        "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+		Repo:        "https://jenkins-x-charts.github.io/v2",
 		GitOps:      true,
 		DevEnv:      testOptions.DevEnv,
 		HelmUpdate:  true, // Flag default when run on CLI
@@ -1020,7 +1020,7 @@ func TestAddAppWithReadmeForGitOps(t *testing.T) {
 		},
 		Version:    version,
 		Alias:      alias,
-		Repo:       "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+		Repo:       "https://jenkins-x-charts.github.io/v2",
 		GitOps:     true,
 		DevEnv:     testOptions.DevEnv,
 		HelmUpdate: true, // Flag default when run on CLI
@@ -1093,7 +1093,7 @@ func TestAddAppWithCustomReadmeForGitOps(t *testing.T) {
 		},
 		Version:    version,
 		Alias:      alias,
-		Repo:       "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+		Repo:       "https://jenkins-x-charts.github.io/v2",
 		GitOps:     true,
 		DevEnv:     testOptions.DevEnv,
 		HelmUpdate: true, // Flag default when run on CLI
@@ -1229,7 +1229,7 @@ func TestAddAppIncludingConditionalQuestionsForGitOps(t *testing.T) {
 			},
 			Version:    version,
 			Alias:      alias,
-			Repo:       "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+			Repo:       "https://jenkins-x-charts.github.io/v2",
 			GitOps:     true,
 			DevEnv:     testOptions.DevEnv,
 			HelmUpdate: true,
@@ -1340,7 +1340,7 @@ func TestAddAppExcludingConditionalQuestionsForGitOps(t *testing.T) {
 			},
 			Version:    version,
 			Alias:      alias,
-			Repo:       "https://storage.googleapis.com/chartmuseum.jenkins-x.io",
+			Repo:       "https://jenkins-x-charts.github.io/v2",
 			GitOps:     true,
 			DevEnv:     testOptions.DevEnv,
 			HelmUpdate: true,

@@ -51,7 +51,7 @@ func TestRepositories(t *testing.T) {
 	require.NoError(t, err, "GetRepositoryPrefixes() failed on dir %s", dataDir)
 
 	data := map[string]string{
-		"https://storage.googleapis.com/chartmuseum.jenkins-x.io": "jenkins-x",
+		"https://jenkins-x-charts.github.io/v2": "jenkins-x",
 		"http://chartmuseum.jenkins-x.io":                         "jenkins-x",
 		"https://kubernetes-charts.storage.googleapis.com":        "stable",
 	}
@@ -103,7 +103,7 @@ func TestResolveDockerImage(t *testing.T) {
 		{dataDir, "foo", "foo", false, ""},
 		{dataDir, "builder-jx", "builder-jx", false, ""},
 		{dataDir, "jenkinsxio/builder-jx", "jenkinsxio/builder-jx", false, ""},
-		{dataDir, "gcr.io/jenkinsxio/builder-jx", "gcr.io/jenkinsxio/builder-jx:1.0.0", false, ""},
+		{dataDir, "ghcr.io/jenkins-x/builder-jx", "ghcr.io/jenkins-x/builder-jx:1.0.0", false, ""},
 		{dataDir, "docker.io/fubar", "fubar:2.0.0", false, ""},
 		{dataDir, "docker.io/snafu", "snafu", false, ""},
 		{dataDir, "susfu", "susfu", true, "failed to unmarshal YAML"},

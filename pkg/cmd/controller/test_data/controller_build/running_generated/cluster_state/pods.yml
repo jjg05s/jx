@@ -122,7 +122,7 @@ items:
         value: cb-kubecd
       - name: SOURCE_URL
         value: https://github.com/cb-kubecd/bdd-spring-1568135191.git
-      image: gcr.io/jenkinsxio/builder-jx:0.1.747
+      image: ghcr.io/jenkins-x/builder-jx:0.1.747
       imagePullPolicy: IfNotPresent
       name: step-git-merge
       resources:
@@ -213,7 +213,7 @@ items:
         value: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true
           -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4
           -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-merge-pull-refs
       resources:
@@ -322,7 +322,7 @@ items:
         value: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true
           -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4
           -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-create-effective-pipeline
       resources:
@@ -427,7 +427,7 @@ items:
         value: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true
           -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4
           -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-create-tekton-crds
       resources:
@@ -616,8 +616,8 @@ items:
       type: PodScheduled
     containerStatuses:
     - containerID: docker://58e2714e5547bc1e5228a3a20670f0a5de34b9ccf21b995136cfa96870240909
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-create-effective-pipeline
       ready: false
@@ -630,8 +630,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:07:26Z"
     - containerID: docker://a0f8fbbfd6ab4080db9276e0aaedb3df941b6a0e99f24d693f9429c1d4f88094
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-create-tekton-crds
       ready: false
@@ -644,8 +644,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:07:27Z"
     - containerID: docker://2f94880db188f839b490cecf829c5552f9bc656330f4385ca3c1fcb029989b17
-      image: gcr.io/jenkinsxio/builder-jx:0.1.747
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-jx@sha256:1e231548ca73780c760a0790a9e80ce16218998080126b6cb53d631208e96661
+      image: ghcr.io/jenkins-x/builder-jx:0.1.747
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-jx@sha256:1e231548ca73780c760a0790a9e80ce16218998080126b6cb53d631208e96661
       lastState: {}
       name: step-git-merge
       ready: false
@@ -672,8 +672,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:07:19Z"
     - containerID: docker://ae5aff984092e048febc28df550c7f795ef07f701f6c48a160b08808332e3f94
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-merge-pull-refs
       ready: false
@@ -886,7 +886,7 @@ items:
         value: 0.0.1
       - name: PREVIEW_VERSION
         value: 0.0.1
-      image: gcr.io/jenkinsxio/builder-jx:0.1.747
+      image: ghcr.io/jenkins-x/builder-jx:0.1.747
       imagePullPolicy: IfNotPresent
       name: step-git-merge
       resources:
@@ -996,7 +996,7 @@ items:
         value: 0.0.1
       - name: PREVIEW_VERSION
         value: 0.0.1
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-setup-jx-git-credentials
       resources:
@@ -1106,7 +1106,7 @@ items:
         value: 0.0.1
       - name: PREVIEW_VERSION
         value: 0.0.1
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-build-mvn-deploy
       resources:
@@ -1216,7 +1216,7 @@ items:
         value: 0.0.1
       - name: PREVIEW_VERSION
         value: 0.0.1
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-build-skaffold-version
       resources:
@@ -1445,7 +1445,7 @@ items:
         value: 0.0.1
       - name: PREVIEW_VERSION
         value: 0.0.1
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-build-post-build
       resources:
@@ -1555,7 +1555,7 @@ items:
         value: 0.0.1
       - name: PREVIEW_VERSION
         value: 0.0.1
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-promote-changelog
       resources:
@@ -1665,7 +1665,7 @@ items:
         value: 0.0.1
       - name: PREVIEW_VERSION
         value: 0.0.1
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-promote-helm-release
       resources:
@@ -1775,7 +1775,7 @@ items:
         value: 0.0.1
       - name: PREVIEW_VERSION
         value: 0.0.1
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
       imagePullPolicy: IfNotPresent
       name: step-promote-jx-promote
       resources:
@@ -1996,8 +1996,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:08:55Z"
     - containerID: docker://bc879af1e79aa4d9028408c3da08433c51213e1839c4faf83a33de131b2383c8
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-build-mvn-deploy
       ready: false
@@ -2010,8 +2010,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:08:52Z"
     - containerID: docker://19c6882478feb28259f26a9e0d1d85a3ba15f8e161b591535cfc9f410de52a9d
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-build-post-build
       ready: false
@@ -2024,8 +2024,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:08:55Z"
     - containerID: docker://4de444fdd205efd0d9dc2b24bb0913e185556d53447fc5b3ca08c0b81e654531
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-build-skaffold-version
       ready: false
@@ -2038,8 +2038,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:08:52Z"
     - containerID: docker://053dbc7462bb411ade35bd2e3edb06f6304a5090b81a7200e581666257de605b
-      image: gcr.io/jenkinsxio/builder-jx:0.1.747
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-jx@sha256:1e231548ca73780c760a0790a9e80ce16218998080126b6cb53d631208e96661
+      image: ghcr.io/jenkins-x/builder-jx:0.1.747
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-jx@sha256:1e231548ca73780c760a0790a9e80ce16218998080126b6cb53d631208e96661
       lastState: {}
       name: step-git-merge
       ready: false
@@ -2066,8 +2066,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:08:32Z"
     - containerID: docker://97cb4d3d588d4decff0bcc2b279312d33044d7bb7a5f63bb27b5ba8182c47232
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-promote-changelog
       ready: false
@@ -2080,8 +2080,8 @@ items:
           reason: Completed
           startedAt: "2019-09-10T17:08:56Z"
     - containerID: docker://0185c5e21ef22da68133c07c48fbee57396c6bc06d981359550b7e578e8c4e5a
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-promote-helm-release
       ready: false
@@ -2090,8 +2090,8 @@ items:
         running:
           startedAt: "2019-09-10T17:08:56Z"
     - containerID: docker://863aaccefc672eb10284e165ded50ff2d3755219627956307c3d4db29fa0a076
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-promote-jx-promote
       ready: false
@@ -2100,8 +2100,8 @@ items:
         running:
           startedAt: "2019-09-10T17:08:56Z"
     - containerID: docker://831134be7a23adbef100d8e1f1eefc8a588a2e8ed1cee349090d2122c7c2c5be
-      image: gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
-      imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
+      image: ghcr.io/jenkins-x/builder-maven:0.0.0-SNAPSHOT-PR-5411-40
+      imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:82ec6020f4f43683a80fbc327c2c9fb80c65a9dbc86d097e2a507183048b8265
       lastState: {}
       name: step-setup-jx-git-credentials
       ready: false

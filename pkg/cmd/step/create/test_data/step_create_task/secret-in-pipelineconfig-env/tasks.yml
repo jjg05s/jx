@@ -74,7 +74,7 @@ items:
         value: $(inputs.params.version)
       - name: PREVIEW_VERSION
         value: $(inputs.params.version)
-      image: gcr.io/jenkinsxio/builder-jx:0.1.527
+      image: ghcr.io/jenkins-x/builder-jx:0.1.527
       name: setup-builder-home
       resources:
         requests:
@@ -131,7 +131,7 @@ items:
         value: $(inputs.params.version)
       - name: PREVIEW_VERSION
         value: $(inputs.params.version)
-      image: gcr.io/jenkinsxio/builder-jx:0.1.527
+      image: ghcr.io/jenkins-x/builder-jx:0.1.527
       name: git-merge
       resources:
         requests:
@@ -375,7 +375,7 @@ items:
         value: $(inputs.params.version)
       - name: PREVIEW_VERSION
         value: $(inputs.params.version)
-      image: gcr.io/jenkinsxio/builder-jx:0.1.527
+      image: ghcr.io/jenkins-x/builder-jx:0.1.527
       name: setup-builder-home
       resources:
         limits:

@@ -37,7 +37,7 @@ pipelineConfig:
                     memory: 3072Mi
             steps:
               - name: init-jx
-                image: gcr.io/jenkinsxio/builder-jx:0.1.639
+                image: ghcr.io/jenkins-x/builder-jx:0.1.639
                 command: jx
                 args: ['create','git','token','-n','fake','-t','1234','-u','https://github.com','fake']
 

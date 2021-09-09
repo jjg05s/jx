@@ -3,7 +3,7 @@ NAME := jx
 OS := $(shell uname)
 
 setup:
-	helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+	helm repo add jenkins-x https://jenkins-x-charts.github.io/v2
 
 build: setup clean
 	helm dependency build charts/jx
@@ -18,7 +18,7 @@ upgrade: clean setup build
 delete:
 	helm delete --purge $(NAME)
 
-clean: 
+clean:
 	rm -rf charts/jx/charts
 	rm -rf charts/jx/${NAME}*.tgz
 	rm -rf charts/jx/requirements.lock

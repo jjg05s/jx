@@ -188,7 +188,7 @@ func TestUpdatePipelineBuilderImage(t *testing.T) {
 	err = o.updatePipelineBuilderImage(resolver)
 	require.NoError(t, err, "could not update builder image in pipeline")
 	data, err := ioutil.ReadFile(to.Name())
-	require.Contains(t, string(data), "gcr.io/jenkinsxio/builder-go:1.0.10", "builder version was not correctly updated")
+	require.Contains(t, string(data), "ghcr.io/jenkins-x/builder-go:1.0.10", "builder version was not correctly updated")
 }
 
 func TestUpdateTemplateBuilderImage(t *testing.T) {
@@ -218,7 +218,7 @@ func TestUpdateTemplateBuilderImage(t *testing.T) {
 	require.NoError(t, err, "could not update builder image in template")
 	data, err := ioutil.ReadFile(to.Name())
 	log.Logger().Infof("**** %s", string(data))
-	require.Contains(t, string(data), "gcr.io/jenkinsxio/builder-go:1.0.10", "builder version was not correctly updated")
+	require.Contains(t, string(data), "ghcr.io/jenkins-x/builder-go:1.0.10", "builder version was not correctly updated")
 }
 
 func (o *TestUpgradeBootOptions) createTmpRequirements(t *testing.T) string {

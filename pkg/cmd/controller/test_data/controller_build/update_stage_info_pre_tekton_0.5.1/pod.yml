@@ -148,7 +148,7 @@ spec:
     command:
     - /builder/tools/entrypoint
     env: []
-    image: gcr.io/jenkinsxio/builder-go:0.1.332
+    image: ghcr.io/jenkins-x/builder-go:0.1.332
     imagePullPolicy: IfNotPresent
     name: build-step-build
     resources: {}
@@ -169,7 +169,7 @@ spec:
     command:
     - /builder/tools/entrypoint
     env: []
-    image: gcr.io/jenkinsxio/builder-go:0.1.477
+    image: ghcr.io/jenkins-x/builder-go:0.1.477
     imagePullPolicy: IfNotPresent
     name: build-step-test-integration
     resources: {}
@@ -212,7 +212,7 @@ spec:
     command:
     - /builder/tools/entrypoint
     env: []
-    image: gcr.io/jenkinsxio/builder-go:0.1.332
+    image: ghcr.io/jenkins-x/builder-go:0.1.332
     imagePullPolicy: IfNotPresent
     name: build-step-codecov-upload
     resources: {}
@@ -359,8 +359,8 @@ status:
     type: PodScheduled
   containerStatuses:
   - containerID: docker://2e67ad3e76967640a0c92c1abeb2c479aba03d6a62861d080bf29315216a2938
-    image: gcr.io/jenkinsxio/builder-go:0.1.332
-    imageID: docker-pullable://gcr.io/jenkinsxio/builder-go@sha256:a3b9d596846270059398237a51111282338b6a2582a6e46f6f492ebc19b4e29e
+    image: ghcr.io/jenkins-x/builder-go:0.1.332
+    imageID: docker-pullable://ghcr.io/jenkins-x/builder-go@sha256:a3b9d596846270059398237a51111282338b6a2582a6e46f6f492ebc19b4e29e
     lastState: {}
     name: build-step-build
     ready: false
@@ -373,8 +373,8 @@ status:
         reason: Completed
         startedAt: 2019-06-07T18:14:25Z
   - containerID: docker://3bac4439971e6f3e56fe4f1242e06365bb82d2dcab25a076313cbc9776fffa2f
-    image: gcr.io/jenkinsxio/builder-go:0.1.332
-    imageID: docker-pullable://gcr.io/jenkinsxio/builder-go@sha256:a3b9d596846270059398237a51111282338b6a2582a6e46f6f492ebc19b4e29e
+    image: ghcr.io/jenkins-x/builder-go:0.1.332
+    imageID: docker-pullable://ghcr.io/jenkins-x/builder-go@sha256:a3b9d596846270059398237a51111282338b6a2582a6e46f6f492ebc19b4e29e
     lastState: {}
     name: build-step-codecov-upload
     ready: false
@@ -457,8 +457,8 @@ status:
         reason: Completed
         startedAt: 2019-06-07T18:14:26Z
   - containerID: docker://c391ca73ca38417c9ef5cf9cb09e3c400ad6e14da9a32d35915d6d742080ce18
-    image: gcr.io/jenkinsxio/builder-go:0.1.477
-    imageID: docker-pullable://gcr.io/jenkinsxio/builder-go@sha256:50b50a30a673867db6128a760de9b8da6bf194a63451cb632bb1217ab95070c7
+    image: ghcr.io/jenkins-x/builder-go:0.1.477
+    imageID: docker-pullable://ghcr.io/jenkins-x/builder-go@sha256:50b50a30a673867db6128a760de9b8da6bf194a63451cb632bb1217ab95070c7
     lastState: {}
     name: build-step-test-integration
     ready: false

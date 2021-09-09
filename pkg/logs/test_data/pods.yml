@@ -104,7 +104,7 @@ items:
               value: fakerepo
             - name: REPO_OWNER
               value: fakeowner
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-git-merge
           resources:
@@ -156,7 +156,7 @@ items:
               value: fakerepo
             - name: REPO_OWNER
               value: fakeowner
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-create-effective-pipeline
           resources:
@@ -209,7 +209,7 @@ items:
               value: fakerepo
             - name: REPO_OWNER
               value: fakeowner
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-create-tekton-crds
           resources:
@@ -381,8 +381,8 @@ items:
           type: PodScheduled
       containerStatuses:
         - containerID: docker://1e02e8305372c87d7ae119dc8674550a11357292bfabdf4dad2d71b9b9933d07
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
           lastState: {}
           name: build-step-create-effective-pipeline
           ready: false
@@ -395,8 +395,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:34:49Z"
         - containerID: docker://52d9bb435df3c1205ac0c4f236a254b3492e00476870661c7c10738517ae29b5
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
           lastState: {}
           name: build-step-create-tekton-crds
           ready: false
@@ -409,8 +409,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:34:49Z"
         - containerID: docker://d57909b6e267152b4278f0cdb57eb611a80157abfd723003f07d3e6d38d3a719
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
           lastState: {}
           name: build-step-git-merge
           ready: false
@@ -623,7 +623,7 @@ items:
               value: "1"
             - name: PREVIEW_VERSION
               value: 0.0.7
-          image: gcr.io/jenkinsxio/builder-jx:0.1.527
+          image: ghcr.io/jenkins-x/builder-jx:0.1.527
           imagePullPolicy: IfNotPresent
           name: build-step-git-merge
           resources:
@@ -712,7 +712,7 @@ items:
               value: "1"
             - name: PREVIEW_VERSION
               value: 0.0.7
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-setup-jx-git-credentials
           resources:
@@ -890,7 +890,7 @@ items:
               value: "1"
             - name: PREVIEW_VERSION
               value: 0.0.7
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-build-npm-install
           resources:
@@ -979,7 +979,7 @@ items:
               value: "1"
             - name: PREVIEW_VERSION
               value: 0.0.7
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-build-npm-test
           resources:
@@ -1166,7 +1166,7 @@ items:
               value: "1"
             - name: PREVIEW_VERSION
               value: 0.0.7
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-build-post-build
           resources:
@@ -1255,7 +1255,7 @@ items:
               value: "1"
             - name: PREVIEW_VERSION
               value: 0.0.7
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-promote-changelog
           resources:
@@ -1344,7 +1344,7 @@ items:
               value: "1"
             - name: PREVIEW_VERSION
               value: 0.0.7
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-promote-helm-release
           resources:
@@ -1433,7 +1433,7 @@ items:
               value: "1"
             - name: PREVIEW_VERSION
               value: 0.0.7
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-promote-jx-promote
           resources:
@@ -1665,8 +1665,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:35:02Z"
         - containerID: docker://60fae7303bc984339e5ad90c9279910bc873e16a19efa026d024c421c2c77056
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
           lastState: {}
           name: build-step-build-npm-install
           ready: false
@@ -1679,8 +1679,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:35:01Z"
         - containerID: docker://15b3ad11f0ee9a47ec69033f17375670f26810a6e4dbba6ed4f01821c8f4ff6c
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
           lastState: {}
           name: build-step-build-npm-test
           ready: false
@@ -1707,8 +1707,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:35:01Z"
         - containerID: docker://b02211c50527464acb6133331904f156b1b1b09c472aa50c463123dc9a101533
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
           lastState: {}
           name: build-step-build-post-build
           ready: false
@@ -1721,8 +1721,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:35:02Z"
         - containerID: docker://bf9a1b3872c8e343ca9b17d5e999692abadadd1b0c49084a12c93cefdea1e828
-          image: gcr.io/jenkinsxio/builder-jx:0.1.527
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-jx@sha256:0480f76a8799e56363ae0597621364fe6a7b152480aec29daba096e5d6cfced5
+          image: ghcr.io/jenkins-x/builder-jx:0.1.527
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-jx@sha256:0480f76a8799e56363ae0597621364fe6a7b152480aec29daba096e5d6cfced5
           lastState: {}
           name: build-step-git-merge
           ready: false
@@ -1749,8 +1749,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:35:00Z"
         - containerID: docker://5780df05616c5f396b108d2549359061fc79d7eec5fc062c237f70472fa2f95d
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
           lastState: {}
           name: build-step-promote-changelog
           ready: false
@@ -1763,8 +1763,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:35:02Z"
         - containerID: docker://fda8599e3607d47d86d7e62ad68eb96cb4646e912b53166500d2b1c54b6a1835
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
           lastState: {}
           name: build-step-promote-helm-release
           ready: false
@@ -1777,8 +1777,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:35:02Z"
         - containerID: docker://d4abd70d8942c22bcd1d9fa1ec8a9440fa65ef4143c15b0286e0589f1dbb2a22
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
           lastState: {}
           name: build-step-promote-jx-promote
           ready: false
@@ -1791,8 +1791,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:35:03Z"
         - containerID: docker://8ef0a0090393a926ac59b0ed792d9e4fa32ed93443a2da251d0f8913688d1c10
-          image: gcr.io/jenkinsxio/builder-nodejs:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
+          image: ghcr.io/jenkins-x/builder-nodejs:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-nodejs@sha256:41fb7143aa5ff044e29dd608e6bfc9b4ac37705f70ba6ae0f45b1ebddc89aa82
           lastState: {}
           name: build-step-setup-jx-git-credentials
           ready: false

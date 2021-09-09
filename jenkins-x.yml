@@ -45,7 +45,7 @@ pipelineConfig:
                   secretKeyRef:
                     name: jenkins-x-chartmuseum
                     key: BASIC_AUTH_PASS
-              - name: GITHUB_ACCESS_TOKEN 
+              - name: GITHUB_ACCESS_TOKEN
                 valueFrom:
                   secretKeyRef:
                     name: knative-git-user-pass
@@ -71,14 +71,14 @@ pipelineConfig:
                     memory: 3072Mi
             steps:
               - name: init-helm
-                image: gcr.io/jenkinsxio/builder-go:helm-v2.17.0-V
+                image: ghcr.io/jenkins-x/builder-go:helm-v2.17.0-V
                 command: helm
                 args: ['init','--client-only']
 
               - name: release
                 #image: docker.io/golang:1.11.5
                 # needs helm in the image for install_gitops_integration_test.go
-                image: gcr.io/jenkinsxio/builder-go-maven
+                image: ghcr.io/jenkins-x/builder-go-maven
                 command: make
                 args: ['release']
 
@@ -86,10 +86,10 @@ pipelineConfig:
               - name: build-and-push-image
                 image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
                 command: /kaniko/executor
-                args: ['--dockerfile=/workspace/source/Dockerfile','--destination=gcr.io/jenkinsxio/jx:$(inputs.params.version)','--destination=gcr.io/jenkinsxio/jx:latest','--context=/workspace/source','--cache-dir=/workspace']
+                args: ['--dockerfile=/workspace/source/Dockerfile','--destination=ghcr.io/jenkins-x/jx:$(inputs.params.version)','--destination=ghcr.io/jenkins-x/jx:latest','--context=/workspace/source','--cache-dir=/workspace']
 
               - name: release-charts
-                image: gcr.io/jenkinsxio/builder-go
+                image: ghcr.io/jenkins-x/builder-go
                 command: make
                 args:
                 - "release"
@@ -97,7 +97,7 @@ pipelineConfig:
                 - /workspace/source/charts/jx/Makefile
 
               - name: update-builders
-                image: gcr.io/jenkinsxio/builder-go
+                image: ghcr.io/jenkins-x/builder-go
                 command: jx
                 args:
                 - step
@@ -114,7 +114,7 @@ pipelineConfig:
                 - https://github.com/jenkins-x/jenkins-x-builders-ml.git
 
               - name: update-lighthouse-jx
-                image: gcr.io/jenkinsxio/builder-go
+                image: ghcr.io/jenkins-x/builder-go
                 command: jx
                 args:
                 - step
@@ -135,7 +135,7 @@ pipelineConfig:
                   value: ""
 
               - name: update-jxui-backend
-                image: gcr.io/jenkinsxio/builder-go
+                image: ghcr.io/jenkins-x/builder-go
                 command: jx
                 args:
                 - step

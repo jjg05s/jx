@@ -107,7 +107,7 @@ items:
         value: ${inputs.params.build_id}
       - name: PREVIEW_VERSION
         value: ${inputs.params.version}
-      image: gcr.io/jenkinsxio/builder-jx:0.1.723
+      image: ghcr.io/jenkins-x/builder-jx:0.1.723
       name: git-merge
       resources:
         requests:
@@ -193,7 +193,7 @@ items:
         value: ${inputs.params.build_id}
       - name: PREVIEW_VERSION
         value: ${inputs.params.version}
-      image: gcr.io/jenkinsxio/builder-maven:0.1.723
+      image: ghcr.io/jenkins-x/builder-maven:0.1.723
       name: build-set-version
       resources:
         requests:
@@ -279,7 +279,7 @@ items:
         value: ${inputs.params.build_id}
       - name: PREVIEW_VERSION
         value: ${inputs.params.version}
-      image: gcr.io/jenkinsxio/builder-maven:0.1.723
+      image: ghcr.io/jenkins-x/builder-maven:0.1.723
       name: build-mvn-install
       resources:
         requests:
@@ -365,7 +365,7 @@ items:
         value: ${inputs.params.build_id}
       - name: PREVIEW_VERSION
         value: ${inputs.params.version}
-      image: gcr.io/jenkinsxio/builder-maven:0.1.723
+      image: ghcr.io/jenkins-x/builder-maven:0.1.723
       name: build-skaffold-version
       resources:
         requests:
@@ -546,7 +546,7 @@ items:
         value: ${inputs.params.build_id}
       - name: PREVIEW_VERSION
         value: ${inputs.params.version}
-      image: gcr.io/jenkinsxio/builder-maven:0.1.723
+      image: ghcr.io/jenkins-x/builder-maven:0.1.723
       name: postbuild-post-build
       resources:
         requests:
@@ -632,7 +632,7 @@ items:
         value: ${inputs.params.build_id}
       - name: PREVIEW_VERSION
         value: ${inputs.params.version}
-      image: gcr.io/jenkinsxio/builder-maven:0.1.723
+      image: ghcr.io/jenkins-x/builder-maven:0.1.723
       name: promote-make-preview
       resources:
         requests:
@@ -718,7 +718,7 @@ items:
         value: ${inputs.params.build_id}
       - name: PREVIEW_VERSION
         value: ${inputs.params.version}
-      image: gcr.io/jenkinsxio/builder-maven:0.1.723
+      image: ghcr.io/jenkins-x/builder-maven:0.1.723
       name: promote-jx-preview
       resources:
         requests:

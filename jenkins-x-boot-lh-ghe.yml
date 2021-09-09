@@ -63,7 +63,7 @@ pipelineConfig:
                 command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/Dockerfile.builder-jx
-                  - --destination=gcr.io/jenkinsxio/builder-jx:$(inputs.params.version)
+                  - --destination=ghcr.io/jenkins-x/builder-jx:$(inputs.params.version)
                   - --context=/workspace/source
                   - --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/
                   - --cache=true
@@ -74,7 +74,7 @@ pipelineConfig:
                 command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/Dockerfile.builder-nodejs
-                  - --destination=gcr.io/jenkinsxio/builder-nodejs:$(inputs.params.version)
+                  - --destination=ghcr.io/jenkins-x/builder-nodejs:$(inputs.params.version)
                   - --context=/workspace/source
                   - --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/
                   - --cache=true
@@ -85,7 +85,7 @@ pipelineConfig:
                 command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/Dockerfile.builder-maven
-                  - --destination=gcr.io/jenkinsxio/builder-maven:$(inputs.params.version)
+                  - --destination=ghcr.io/jenkins-x/builder-maven:$(inputs.params.version)
                   - --context=/workspace/source
                   - --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/
                   - --cache=true
@@ -96,7 +96,7 @@ pipelineConfig:
                 command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/Dockerfile.builder-go
-                  - --destination=gcr.io/jenkinsxio/builder-go:$(inputs.params.version)
+                  - --destination=ghcr.io/jenkins-x/builder-go:$(inputs.params.version)
                   - --context=/workspace/source
                   - --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/
                   - --cache=true
@@ -107,7 +107,7 @@ pipelineConfig:
                 command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/Dockerfile.builder-go-nodejs
-                  - --destination=gcr.io/jenkinsxio/builder-go-nodejs:$(inputs.params.version)
+                  - --destination=ghcr.io/jenkins-x/builder-go-nodejs:$(inputs.params.version)
                   - --context=/workspace/source
                   - --cache-repo=jenkins-x-docker-registry.jx.svc.cluster.local:5000/
                   - --cache=true
@@ -152,15 +152,15 @@ pipelineConfig:
               - name: JENKINS_PASSWORD
                 valueFrom:
                   secretKeyRef:
-                    name: test-jenkins-user 
+                    name: test-jenkins-user
                     key: password
             steps:
               - name: boot-lh-ghe-e2e-tests
-                image: gcr.io/jenkinsxio/builder-go-nodejs:$(inputs.params.version)
+                image: ghcr.io/jenkins-x/builder-go-nodejs:$(inputs.params.version)
                 command: ./jx/bdd/boot-lh-ghe/ci.sh
 
               - name: generate-report
-                image: gcr.io/jenkinsxio/builder-nodejs10x:0.1.607
+                image: ghcr.io/jenkins-x/builder-nodejs10x:0.1.607
                 command: jx
                 args:
                   - step
@@ -178,11 +178,11 @@ pipelineConfig:
                   - "BDD_Boot_LH_GHE_Tests"
 
               - name: clear-kubeconfig
-                image: gcr.io/jenkinsxio/builder-go:$(inputs.params.version)
+                image: ghcr.io/jenkins-x/builder-go:$(inputs.params.version)
                 command: rm ~/.kube/config
 
               - name: stash_html_report
-                image: gcr.io/jenkinsxio/builder-go:$(inputs.params.version)
+                image: ghcr.io/jenkins-x/builder-go:$(inputs.params.version)
                 command: jx
                 args:
                   - step

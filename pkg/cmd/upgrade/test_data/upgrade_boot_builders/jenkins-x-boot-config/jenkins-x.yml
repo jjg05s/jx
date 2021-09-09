@@ -4,7 +4,7 @@ pipelineConfig:
     pullRequest:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-go:0.1.760
+          image: ghcr.io/jenkins-x/builder-go:0.1.760
         environment:
           - name: DEPLOY_NAMESPACE
             value: jx
@@ -98,7 +98,7 @@ pipelineConfig:
     pullRequest:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-go:0.1.760
+          image: ghcr.io/jenkins-x/builder-go:0.1.760
         stages:
           - name: release
             steps:

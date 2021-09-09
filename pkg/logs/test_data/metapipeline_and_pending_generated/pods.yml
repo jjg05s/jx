@@ -103,7 +103,7 @@ items:
               value: fakerepo
             - name: REPO_OWNER
               value: fakeowner
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-git-merge
           resources:
@@ -155,7 +155,7 @@ items:
               value: fakerepo
             - name: REPO_OWNER
               value: fakeowner
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-create-effective-pipeline
           resources:
@@ -208,7 +208,7 @@ items:
               value: fakerepo
             - name: REPO_OWNER
               value: fakeowner
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
           imagePullPolicy: IfNotPresent
           name: build-step-create-tekton-crds
           resources:
@@ -380,8 +380,8 @@ items:
           type: PodScheduled
       containerStatuses:
         - containerID: docker://1e02e8305372c87d7ae119dc8674550a11357292bfabdf4dad2d71b9b9933d07
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
           lastState: {}
           name: build-step-create-effective-pipeline
           ready: false
@@ -394,8 +394,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:34:49Z"
         - containerID: docker://52d9bb435df3c1205ac0c4f236a254b3492e00476870661c7c10738517ae29b5
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
           lastState: {}
           name: build-step-create-tekton-crds
           ready: false
@@ -408,8 +408,8 @@ items:
               reason: Completed
               startedAt: "2019-07-02T12:34:49Z"
         - containerID: docker://d57909b6e267152b4278f0cdb57eb611a80157abfd723003f07d3e6d38d3a719
-          image: gcr.io/jenkinsxio/builder-maven:0.1.542
-          imageID: docker-pullable://gcr.io/jenkinsxio/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
+          image: ghcr.io/jenkins-x/builder-maven:0.1.542
+          imageID: docker-pullable://ghcr.io/jenkins-x/builder-maven@sha256:3d9e0c647efb7fcee74ac7181fdda79bf5d6313f1a5f35792bcc699c7405d281
           lastState: {}
           name: build-step-git-merge
           ready: false
